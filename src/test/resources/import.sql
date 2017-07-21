@@ -1,0 +1,4 @@
+
+insert  into sys_user(id,user_uuid,login_name,email,password,user_name,salt,available_enum,delete_enum,request_ip,request_mac,request_user_agent,avatar_image_path,self_introduction,sex_enum,user_birthday,create_datetime,lock_version) values (1,'a3006a52f2064ce8bdf62dc3a1a1ce72','admin','judas.n@qq.com','353c87e543a41339aaaa705bc1228d0e','admin','T6X2ea','0','0',NULL,NULL,NULL,NULL,NULL,'0',NULL,'2016-06-20 11:49:53',3);
+insert  into sys_user(id,user_uuid,login_name,email,password,user_name,salt,available_enum,delete_enum,request_ip,request_mac,request_user_agent,avatar_image_path,self_introduction,sex_enum,user_birthday,create_datetime,lock_version) values (2,'e1344b0664e94dbf9bd3caaa1409d7fe','judasn','363379444@qq.com','9092c370cd64ccaabaaa4e064c1388c8','judasn','X7Ao1K','0','0','0:0:0:0:0:0:0:1',NULL,'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.110 Safari/537.36',NULL,NULL,'0',NULL,'2017-01-05 14:59:05',2);
+

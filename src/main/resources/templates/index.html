@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta content="text/html;charset=UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	
+	<!-- 框架约定默认是以 src\main\resources\static 为根目录-->
+	<link rel="stylesheet" href="../static/js/plugins/bootstrap/bootstrap.min.css" th:href="@{js/plugins/bootstrap/bootstrap.min.css}" />
+
+</head>
+<body>
+
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-12">
+			<h3>
+				显示列表数据：
+			</h3>
+			<table class="table">
+				<thead>
+				<tr>
+					<th>
+						序号
+					</th>
+					<th>
+						用户名
+					</th>
+					<th>
+						邮箱
+					</th>
+					<th>
+						登录名
+					</th>
+					<th>
+						密码
+					</th>
+				</tr>
+				</thead>
+				<tbody>
+				<tr th:each="subObject,iterStat:${sysUserList}" th:class="${iterStat.odd}? 'danger' : 'success' ">
+					<td th:text="${iterStat.index}"></td>
+					<td th:text="${subObject.userName}"></td>
+					<td th:text="${subObject.email}"></td>
+					<td th:text="${subObject.loginName}"></td>
+					<td th:text="${subObject.password}"></td>
+				</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>
