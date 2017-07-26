@@ -36,6 +36,8 @@ public class SysUserRestController {
 	@Autowired
 	private SysUserDao sysUserDao;
 
+	//======================================================================业务处理 start============================================================================================
+
 	@ApiOperation(value = "通过登录名查询用户数据", notes = "通过登录名查询用户数据")
 	@ApiImplicitParams({
 			@ApiImplicitParam(name = "loginName", value = "登录名", required = true, paramType = "query", dataType = "String")
@@ -43,6 +45,9 @@ public class SysUserRestController {
 	@RequestMapping(method = RequestMethod.GET)
 	public ResponseEntity<?> findOneByLoginName(@RequestParam(value = "loginName", required = true) String loginName) {
 		SysUser sysUser = sysUserService.findByLoginName(loginName);
+		for (int i = 1; i < 6; i++) {
+			System.out.println("--------------------------------i=" + i);
+		}
 		return ResponseEntity.status(HttpStatus.OK).body(sysUser);
 	}
 
@@ -72,11 +77,15 @@ public class SysUserRestController {
 
 	@RequestMapping(value = "/json", method = RequestMethod.POST)
 	public ResponseEntity<?> saveAndReturnByJson(@RequestBody SysUser sysUser) {
+
+		//region 新建保存对象
 		sysUser.setSalt(RandomStringUtils.randomAlphabetic(6));
 		sysUser.setAvailableEnum("0");
 		sysUser.setDeleteEnum("0");
 		sysUser.setCreateDatetime(new Date());
 		SysUser saveResult = sysUserService.saveUserAndReturn(sysUser);
+		//endregion
+		
 		return ResponseEntity.status(HttpStatus.OK).body(saveResult);
 	}
 
@@ -86,6 +95,7 @@ public class SysUserRestController {
 	})
 	@RequestMapping(value = "/{userId}", method = RequestMethod.DELETE)
 	public ResponseEntity<?> delete(@PathVariable Long userId) {
+		//zchtodo 未测试
 		sysUserService.deleteUserById(userId);
 		return ResponseEntity.status(HttpStatus.OK).body(null);
 	}
@@ -111,5 +121,13 @@ public class SysUserRestController {
 		SysUser updateResult = sysUserService.updateUser(sysUser);
 		return ResponseEntity.status(HttpStatus.OK).body(updateResult);
 	}
+
+	//======================================================================业务处理 end============================================================================================
+
+
+	//======================================================================私有方法 start============================================================================================
+
+	//======================================================================私有方法 end============================================================================================
+
 
 }

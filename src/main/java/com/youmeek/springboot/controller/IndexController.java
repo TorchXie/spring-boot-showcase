@@ -18,6 +18,9 @@ public class IndexController {
 	@Autowired
 	private SysUserService sysUserService;
 
+	//======================================================================链接跳转 start============================================================================================
+
+
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String index() {
 		return "redirect:/swagger-ui.html";
@@ -29,4 +32,6 @@ public class IndexController {
 		model.addAttribute("sysUserList", sysUserList);
 		return "index";
 	}
+	
+	//======================================================================链接跳转 start============================================================================================
 }
