@@ -35,6 +35,8 @@ public class SysUserRestController {
 
 	@Autowired
 	private SysUserDao sysUserDao;
+	
+	//private SysUserDao sysUserDao;
 
 	//======================================================================业务处理 start============================================================================================
 
