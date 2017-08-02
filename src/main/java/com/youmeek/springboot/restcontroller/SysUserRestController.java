@@ -55,6 +55,7 @@ public class SysUserRestController {
 	@RequestMapping(value = "/list", method = RequestMethod.GET)
 	public ResponseEntity<?> findAll() {
 		List<SysUser> sysUserList = sysUserService.findAll();
+		System.out.println("--------------------------------");
 		return ResponseEntity.status(HttpStatus.OK).body(sysUserList);
 	}
 
