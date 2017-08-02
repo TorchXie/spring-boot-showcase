@@ -47,6 +47,7 @@ public class SysUserRestController {
 		SysUser sysUser = sysUserService.findByLoginName(loginName);
 		for (int i = 1; i < 6; i++) {
 			System.out.println("--------------------------------i=" + i);
+			System.out.println("--------------------------------i=" + i);
 		}
 		return ResponseEntity.status(HttpStatus.OK).body(sysUser);
 	}
