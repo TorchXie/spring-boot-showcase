@@ -36,8 +36,6 @@ public class SysUserRestController {
 	@Autowired
 	private SysUserDao sysUserDao;
 	
-	//private SysUserDao sysUserDao;
-
 	//======================================================================业务处理 start============================================================================================
 
 	@ApiOperation(value = "通过登录名查询用户数据", notes = "通过登录名查询用户数据")
