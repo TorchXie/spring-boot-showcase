@@ -47,6 +47,7 @@ public class SysUserRestController {
 		SysUser sysUser = sysUserService.findByLoginName(loginName);
 		for (int i = 1; i < 6; i++) {
 			System.out.println("--------------------------------i=" + i);
+			System.out.println("--------------------------------i=" + i);
 		}
 		return ResponseEntity.status(HttpStatus.OK).body(sysUser);
 	}
@@ -55,6 +56,7 @@ public class SysUserRestController {
 	@RequestMapping(value = "/list", method = RequestMethod.GET)
 	public ResponseEntity<?> findAll() {
 		List<SysUser> sysUserList = sysUserService.findAll();
+		System.out.println("--------------------------------");
 		return ResponseEntity.status(HttpStatus.OK).body(sysUserList);
 	}
 
