@@ -46,7 +46,11 @@ public class SysUserRestController {
 	public ResponseEntity<?> findOneByLoginName(@RequestParam(value = "loginName", required = true) String loginName) {
 		SysUser sysUser = sysUserService.findByLoginName(loginName);
 		for (int i = 1; i < 6; i++) {
-			System.out.println("--------------------------------修改bug=" + i);
+			System.out.println("--------------------------------修改1111111bug=" + i);
+			System.out.println("--------------------------------修改1111111bug=" + i);
+			System.out.println("--------------------------------修改1111111bug=" + i);
+			System.out.println("--------------------------------修改1111111bug=" + i);
+			System.out.println("--------------------------------修改1111111bug=" + i);
 			System.out.println("--------------------------------i=" + i);
 			System.out.println("--------------------------------i=" + i);
 		}
