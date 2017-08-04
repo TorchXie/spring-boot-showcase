@@ -29,6 +29,14 @@ public class IndexController {
 		System.out.println("--------------------------------bug");
 		System.out.println("--------------------------------bug");
 		System.out.println("--------------------------------bug");
+		System.out.println("--------------------------------bug");
+		System.out.println("--------------------------------bug新");
+		System.out.println("--------------------------------bug新");
+		System.out.println("--------------------------------bug新");
+		System.out.println("--------------------------------bug新");
+		System.out.println("--------------------------------bug新");
+		System.out.println("--------------------------------bug新");
+		System.out.println("--------------------------------bug新");
 		return "redirect:/swagger-ui.html";
 	}
 
