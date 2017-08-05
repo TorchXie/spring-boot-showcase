@@ -78,13 +78,11 @@ public class SysUserRestController {
 	@RequestMapping(value = "/json", method = RequestMethod.POST)
 	public ResponseEntity<?> saveAndReturnByJson(@RequestBody SysUser sysUser) {
 
-		//region 新建保存对象
 		sysUser.setSalt(RandomStringUtils.randomAlphabetic(6));
 		sysUser.setAvailableEnum("0");
 		sysUser.setDeleteEnum("0");
 		sysUser.setCreateDatetime(new Date());
 		SysUser saveResult = sysUserService.saveUserAndReturn(sysUser);
-		//endregion
 		
 		return ResponseEntity.status(HttpStatus.OK).body(saveResult);
 	}
@@ -123,7 +121,6 @@ public class SysUserRestController {
 	}
 
 	//======================================================================业务处理 end============================================================================================
-
 
 	//======================================================================私有方法 start============================================================================================
 
