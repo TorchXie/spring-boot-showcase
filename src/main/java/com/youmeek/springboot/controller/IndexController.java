@@ -23,6 +23,20 @@ public class IndexController {
 
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String index() {
+		System.out.println("--------------------------------bug");
+		System.out.println("--------------------------------bug");
+		System.out.println("--------------------------------bug");
+		System.out.println("--------------------------------bug");
+		System.out.println("--------------------------------bug");
+		System.out.println("--------------------------------bug");
+		System.out.println("--------------------------------bug");
+		System.out.println("--------------------------------bug新");
+		System.out.println("--------------------------------bug新");
+		System.out.println("--------------------------------bug新");
+		System.out.println("--------------------------------bug新");
+		System.out.println("--------------------------------bug新");
+		System.out.println("--------------------------------bug新");
+		System.out.println("--------------------------------bug新");
 		return "redirect:/swagger-ui.html";
 	}
 

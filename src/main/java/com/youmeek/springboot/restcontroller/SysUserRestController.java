@@ -35,7 +35,7 @@ public class SysUserRestController {
 
 	@Autowired
 	private SysUserDao sysUserDao;
-
+	
 	//======================================================================业务处理 start============================================================================================
 
 	@ApiOperation(value = "通过登录名查询用户数据", notes = "通过登录名查询用户数据")
@@ -46,6 +46,15 @@ public class SysUserRestController {
 	public ResponseEntity<?> findOneByLoginName(@RequestParam(value = "loginName", required = true) String loginName) {
 		SysUser sysUser = sysUserService.findByLoginName(loginName);
 		for (int i = 1; i < 6; i++) {
+			System.out.println("--------------------------------修改122222221bug=" + i);
+			System.out.println("--------------------------------修改122222221bug=" + i);
+			System.out.println("--------------------------------修改122222221bug=" + i);
+			System.out.println("--------------------------------修改122222221bug=" + i);
+			System.out.println("--------------------------------修改122222221bug=" + i);
+			System.out.println("--------------------------------修改122222221bug=" + i);
+			System.out.println("--------------------------------修改122222221bug=" + i);
+			System.out.println("--------------------------------修改122222221bug=" + i);
+			System.out.println("--------------------------------i=" + i);
 			System.out.println("--------------------------------i=" + i);
 		}
 		return ResponseEntity.status(HttpStatus.OK).body(sysUser);
@@ -55,6 +64,7 @@ public class SysUserRestController {
 	@RequestMapping(value = "/list", method = RequestMethod.GET)
 	public ResponseEntity<?> findAll() {
 		List<SysUser> sysUserList = sysUserService.findAll();
+		System.out.println("--------------------------------");
 		return ResponseEntity.status(HttpStatus.OK).body(sysUserList);
 	}
 
