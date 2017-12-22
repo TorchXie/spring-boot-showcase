@@ -8,5 +8,5 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface SysUserDao extends JpaRepository<SysUser, Long> {
 	SysUser findByLoginName(String loginName);
-	SysUser findByLoginName2(String loginName);
+	SysUser findByEmail(String email);
 }
