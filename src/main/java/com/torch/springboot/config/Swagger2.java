@@ -1,4 +1,4 @@
-package com.youmeek.springboot.config;
+package com.torch.springboot.config;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import springfox.documentation.builders.ApiInfoBuilder;
@@ -18,7 +18,7 @@ public class Swagger2 {
         return new Docket(DocumentationType.SWAGGER_2)
                 .apiInfo(apiInfo())
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.youmeek.springboot.restcontroller"))
+                .apis(RequestHandlerSelectors.basePackage("com.torch.springboot.restcontroller"))
                 .paths(PathSelectors.any())
                 .build();
     }

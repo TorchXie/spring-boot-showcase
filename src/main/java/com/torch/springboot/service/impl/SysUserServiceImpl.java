@@ -1,9 +1,9 @@
-package com.youmeek.springboot.service.impl;
+package com.torch.springboot.service.impl;
 
 
-import com.youmeek.springboot.dao.SysUserDao;
-import com.youmeek.springboot.pojo.SysUser;
-import com.youmeek.springboot.service.SysUserService;
+import com.torch.springboot.dao.SysUserDao;
+import com.torch.springboot.pojo.SysUser;
+import com.torch.springboot.service.SysUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

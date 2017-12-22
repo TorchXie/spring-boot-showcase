@@ -1,9 +1,9 @@
-package com.youmeek.springboot.restcontroller;
+package com.torch.springboot.restcontroller;
 
 
-import com.youmeek.springboot.dao.SysUserDao;
-import com.youmeek.springboot.pojo.SysUser;
-import com.youmeek.springboot.service.SysUserService;
+import com.torch.springboot.dao.SysUserDao;
+import com.torch.springboot.pojo.SysUser;
+import com.torch.springboot.service.SysUserService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;

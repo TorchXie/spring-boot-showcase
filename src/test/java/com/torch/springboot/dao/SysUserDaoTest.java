@@ -1,7 +1,7 @@
-package com.youmeek.springboot.dao;
+package com.torch.springboot.dao;
 
-import com.youmeek.springboot.SpringBootUnitTestJpaApplication;
-import com.youmeek.springboot.pojo.SysUser;
+import com.torch.springboot.SpringBootUnitTestJpaApplication;
+import com.torch.springboot.pojo.SysUser;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

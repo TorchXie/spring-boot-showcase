@@ -1,7 +1,7 @@
-package com.youmeek.springboot.dao;
+package com.torch.springboot.dao;
 
 
-import com.youmeek.springboot.pojo.SysUser;
+import com.torch.springboot.pojo.SysUser;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

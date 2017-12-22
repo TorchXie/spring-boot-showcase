@@ -1,4 +1,4 @@
-package com.youmeek.springboot.pojo;
+package com.torch.springboot.pojo;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

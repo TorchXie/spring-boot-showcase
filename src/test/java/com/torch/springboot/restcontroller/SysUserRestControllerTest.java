@@ -1,9 +1,9 @@
-package com.youmeek.springboot.restcontroller;
+package com.torch.springboot.restcontroller;
 
 import com.alibaba.fastjson.JSON;
-import com.youmeek.springboot.SpringBootUnitTestJpaApplication;
-import com.youmeek.springboot.dao.SysUserDao;
-import com.youmeek.springboot.pojo.SysUser;
+import com.torch.springboot.SpringBootUnitTestJpaApplication;
+import com.torch.springboot.dao.SysUserDao;
+import com.torch.springboot.pojo.SysUser;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;

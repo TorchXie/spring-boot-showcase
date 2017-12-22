@@ -1,7 +1,7 @@
-package com.youmeek.springboot.service;
+package com.torch.springboot.service;
 
 
-import com.youmeek.springboot.pojo.SysUser;
+import com.torch.springboot.pojo.SysUser;
 
 import java.util.List;
 
